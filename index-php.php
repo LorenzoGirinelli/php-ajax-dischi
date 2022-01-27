@@ -18,40 +18,26 @@
     <!-- Disk list  -->
     <div class="disk-list">
         <div class="container">
+        <div class="song-container">
             <?php foreach ($database as $song) { ?>
 
                 <div class="disk-card">
-            <div class="disk-container">
-
-                <?php foreach ($database as $song) { ?>
 
                     <!-- Poster  -->
                     <div class="poster">
-                        <img <?php echo 'src='$song['poster']''; ?> <?php echo 'alt='$song['poster']''; ?>>
-                    <div class="disk-card">
-
-                        <div class="poster">
-                            <img src="<?php echo $song['poster']; ?>" alt="<?php echo $song['title']; ?>">                        
-                        </div>
-
+                        <img src= <?php echo $song['poster']; ?>>                      
+                    </div>
                         <div class="title"><?php echo $song['title']; ?></div>
 
                         <div class="author"><?php echo $song['author']; ?></div>
 
                         <div class="year"><?php echo $song['year']; ?></div>
-
-                    </div>
-
-                    <div class="title">{{ diskObject.title }}</div>
-
-                    <div class="author">{{ diskObject.author }}</div>
-
-                    <div class="year">{{ diskObject.year }}</div>
-
                 </div>
-                <?php } ?>
-                <?php } ?>
+            
+
+            <?php } ?>
             </div>
+            
 
         </div>
     </div>
