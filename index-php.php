@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php require __DIR__ . './database.php'; ?>
+    <?php require __DIR__ . '/database.php'; ?>
     <!-- Header  -->
     <header>
         <div class="logo">
